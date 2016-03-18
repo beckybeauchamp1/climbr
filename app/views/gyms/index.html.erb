@@ -1,0 +1,7 @@
+<h1><%= link_to "Add a New Climbing Gym", new_gym_path %></h1>
+
+<% @gyms.each do |gym| %>
+  <div class = "gym" >
+    <%= link_to gym.name, gym %>
+  </div>
+<% end %>  
