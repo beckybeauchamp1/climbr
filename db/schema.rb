@@ -16,12 +16,7 @@ ActiveRecord::Schema.define(version: 20160318175402) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "gyms", force: :cascade do |t|
-    t.string "name"
-    t.string "location"
-  end
-
-  create_table "routes", force: :cascade do |t|
+  create_table "courses", force: :cascade do |t|
     t.string  "title"
     t.string  "difficulty"
     t.string  "setter"
@@ -29,7 +24,12 @@ ActiveRecord::Schema.define(version: 20160318175402) do
     t.integer "gym_id"
   end
 
-  add_index "routes", ["gym_id"], name: "index_routes_on_gym_id", using: :btree
+  add_index "courses", ["gym_id"], name: "index_courses_on_gym_id", using: :btree
 
-  add_foreign_key "routes", "gyms"
+  create_table "gyms", force: :cascade do |t|
+    t.string "name"
+    t.string "location"
+  end
+
+  add_foreign_key "courses", "gyms"
 end

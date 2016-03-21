@@ -1,6 +1,6 @@
-class CreateRoutes < ActiveRecord::Migration
+class CreateCourses < ActiveRecord::Migration
   def change
-    create_table :routes do |t|
+    create_table :courses do |t|
       t.string :title
       t.string :difficulty
       t.string :setter
