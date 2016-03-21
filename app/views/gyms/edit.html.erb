@@ -1,0 +1,25 @@
+<h3>Edit Climbing Center</h3>
+
+<%= form_for @gym do |f| %>
+
+  <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label :location %><br>
+    <%= f.text_field :location %>
+  </p>
+
+  <p>
+    <%= f.submit "UPDATE INFO" %>
+  </p>
+
+<% end %>
+
+<%= form_for @gym, method: :delete do |f| %>
+  <%= f.submit "DELETE THIS GYM", class: "delete" %>
+<% end %>

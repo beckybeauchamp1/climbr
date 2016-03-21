@@ -12,12 +12,14 @@ class CoursesController < ApplicationController
 
   def create
     @gym = Gym.find(params[:gym_id])
-    @course = @gym.courses.new(course_params)
+    @course = @gym.courses.create(course_params)
     redirect_to gym_courses_path(@gym)
   end
 
   def show
+    @gym = Gym.find(params[:gym_id])
     @course = @gym.courses.find(params[:id])
+    puts params
   end
 
   private

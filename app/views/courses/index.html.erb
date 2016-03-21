@@ -1,3 +1,9 @@
-<h4>Completed Routes</h4>
+<h3>Completed Routes</h3>
+
+<% @gym.courses.each do |course| %>
+  <li>
+    <%= link_to course.title, gym_course_path(@gym, course) %>
+  </li>
+<% end %>
 
 <h3><%= link_to "Add a New Route", new_gym_course_path(@gym) %></h3>
