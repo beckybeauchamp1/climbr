@@ -1,0 +1,21 @@
+<h3>Add a New Climbing Center</h3>
+
+<%= form_for @gym do |f| %>
+
+  <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label :location %><br>
+    <%= f.text_field :location %>
+  </p>
+
+  <p>
+    <%= f.submit "ADD" %>
+  </p>
+
+<% end %>

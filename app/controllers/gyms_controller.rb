@@ -13,6 +13,10 @@ class GymsController < ApplicationController
     redirect_to gyms_path(@gym)
   end
 
+  def show
+    @gym = Gym.find(params[:id])
+  end
+
   private
     def gym_params
       params.require(:gym).permit(:name, :location)
