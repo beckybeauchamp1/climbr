@@ -19,7 +19,25 @@ class CoursesController < ApplicationController
   def show
     @gym = Gym.find(params[:gym_id])
     @course = @gym.courses.find(params[:id])
-    puts params
+  end
+
+  def edit
+    @gym = Gym.find(params[:gym_id])
+    @course = @gym.courses.find(params[:id])
+  end
+
+  def update
+    @gym = Gym.find(params[:gym_id])
+    @course = @gym.courses.find(params[:id])
+    @course.update(course_params)
+    redirect_to gym_course_path
+  end
+
+  def destroy
+    @gym = Gym.find(params[:gym_id])
+    @course = @gym.courses.find(params[:id])
+    @course.destroy
+    redirect_to gym_course_path
   end
 
   private

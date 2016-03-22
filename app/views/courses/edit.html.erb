@@ -1,0 +1,35 @@
+<h3>Edit Route</h3>
+
+<%= form_for [@gym, @course] do |f| %>
+
+  <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </p>
+
+  <p>
+    <%= f.label :difficulty %><br>
+    <%= f.text_field :difficulty %>
+  </p>
+
+  <p>
+    <%= f.label :setter %><br>
+    <%= f.text_field :setter %>
+  </p>
+
+  <p>
+    <%= f.label :set_date %><br>
+    <%= f.text_field :set_date %>
+  </p>
+
+  <p>
+    <%= f.submit "SAVE EDITS" %>
+  </p>
+
+<% end %>
+
+<%= form_for [@gym, @course], method: :delete do |f| %>
+  <%= f.submit "DELETE ROUTE", class: "delete" %>
+<% end %>

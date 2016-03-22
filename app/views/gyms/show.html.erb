@@ -3,5 +3,12 @@
 
 <%= link_to "EDIT GYM", edit_gym_path %>
 
+<h3>Completed Routes</h3>
 
-<h3><%= link_to "Completed Routes", gym_courses_path(@gym) %></h3>
+<% @gym.courses.each do |course| %>
+  <li>
+    <%= link_to course.title, gym_course_path(@gym, course) %>
+  </li>
+<% end %>
+
+<h3><%= link_to "Add a New Route", new_gym_course_path(@gym) %></h3>
