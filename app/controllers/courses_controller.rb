@@ -37,7 +37,7 @@ class CoursesController < ApplicationController
     @gym = Gym.find(params[:gym_id])
     @course = @gym.courses.find(params[:id])
     @course.destroy
-    redirect_to gym_course_path
+    redirect_to gym_path(@gym)
   end
 
   private
