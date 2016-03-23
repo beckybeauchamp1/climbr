@@ -1,10 +1,11 @@
-<div class="gymshowheader">
+<div class="gymshowheader addedit">
   <h3 class="gymshow name"><%= @gym.name %> |</h3>
   <p class="gymshow city"><%= @gym.location %></p>
   <p class="gymshow gymedit"><%= link_to "✎", edit_gym_path %></p>
 </div>
 
 <h2>Edit Gym</h2>
+
 <div class="form">
 
   <%= form_for @gym do |f| %>

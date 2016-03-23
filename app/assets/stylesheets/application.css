@@ -13,7 +13,7 @@ h1 {
 h2 {
   font-family: Arimo;
   font-variant: small-caps;
-  font-size: 40px;
+  font-size: 35px;
   text-align: center;
 }
 
@@ -35,7 +35,7 @@ body {
 .arimo {
   font-family: Arimo;
   font-variant: small-caps;
-  font-size: 30px;
+  font-size: 35px;
   text-align: center;
 }
 
@@ -51,7 +51,7 @@ a.arimolink {
 .name {
   font-family: Arimo;
   font-variant: small-caps;
-  font-size: 40px;
+  font-size: 35px;
   margin: 15px 5px 15px 20px;
 }
 
@@ -89,6 +89,7 @@ a.arimolink {
 
 .title {
   font-family: Roboto;
+  font-size: 25px;
   margin: 15px 1px 15px 15px;
 }
 
@@ -99,12 +100,13 @@ a.arimolink {
 .coursetag {
   display: inline-block;
   font-family: Roboto;
+  font-size: 20px;
   text-align: center;
 }
 
 .difficulty {
   font-family: Roboto;
-  font-size: 100px;
+  font-size: 125px;
   font-weight: bold;
 }
 
@@ -119,6 +121,12 @@ a.add {
   margin: 0 auto;
 }
 
-.arimo:hover {
-text-shadow: 0px 0 3px #386c9c;
+.addedit {
+  color: #ffffff;
+  background-color: #0fa12e
+}
+
+a:hover {
+  text-shadow: 0px 0 3px #386c9c;
+  text-decoration: none;
 }

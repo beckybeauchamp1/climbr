@@ -1,35 +1,41 @@
 <div class="gymshowheader">
+  <h3 class="gymshow name arimo"><%= link_to @gym.name, gym_path(@gym), class: "arimolink" %> |</h3>
+  <p class="gymshow city"><%= @gym.location %></p>
+  <p class="gymshow gymedit">✎</p>
+</div>
+
+<div class="gymshowheader addedit">
   <h2 class="gymshow">Add New Route</h2>
 </div>
 
 <div class="form">
-<%= form_for [@gym, @course] do |f| %>
+  <%= form_for [@gym, @course] do |f| %>
 
-  <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+    <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
 
-  <p>
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
-  </p>
+    <p>
+      <%= f.label :title %><br>
+      <%= f.text_field :title %>
+    </p>
 
-  <p>
-    <%= f.label :difficulty %><br>
-    <%= f.text_field :difficulty %>
-  </p>
+    <p>
+      <%= f.label :difficulty %><br>
+      <%= f.text_field :difficulty %>
+    </p>
 
-  <p>
-    <%= f.label :setter %><br>
-    <%= f.text_field :setter %>
-  </p>
+    <p>
+      <%= f.label :setter %><br>
+      <%= f.text_field :setter %>
+    </p>
 
-  <p>
-    <%= f.label :set_date %><br>
-    <%= f.text_field :set_date %>
-  </p>
+    <p>
+      <%= f.label :set_date %><br>
+      <%= f.text_field :set_date %>
+    </p>
 
-  <p>
-    <%= f.submit "ADD ROUTE" %>
-  </p>
+    <p>
+      <%= f.submit "ADD ROUTE" %>
+    </p>
 
-<% end %>
+  <% end %>
 </div>

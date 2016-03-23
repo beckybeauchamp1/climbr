@@ -5,10 +5,11 @@
 </div>
 
 <div class="courseshow">
-  <h3 class="courseheader title"><%= @course.title %></h3>
-  <p class="courseheader courseedit"><%= link_to "✎", edit_gym_course_path %></p><br>
-
+  <div class="gymshowheader">
+    <p class="courseheader title"><%= @course.title %></p>
+    <p class="courseheader courseedit"><%= link_to "✎", edit_gym_course_path %></p><br>
+  </div>
+  <p class="difficulty"><%= @course.difficulty %></p><br>
   <p class="coursetag"><%= @course.setter %> |</p>
   <p class="coursetag"><%= @course.set_date %></p>
-  <p class="difficulty"><%= @course.difficulty %></p><br>
 </div>
