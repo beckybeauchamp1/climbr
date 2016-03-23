@@ -13,7 +13,7 @@ class CoursesController < ApplicationController
   def create
     @gym = Gym.find(params[:gym_id])
     @course = @gym.courses.create(course_params)
-    redirect_to gym_courses_path(@gym)
+    redirect_to gym_path(@gym)
   end
 
   def show

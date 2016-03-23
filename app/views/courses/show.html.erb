@@ -1,5 +1,5 @@
 <div class="gymshowheader">
-  <h3 class="gymshow name"><%= @gym.name %> |</h3>
+  <h3 class="gymshow name arimo"><%= link_to @gym.name, gym_path(@gym), class: "arimolink" %> |</h3>
   <p class="gymshow city"><%= @gym.location %></p>
   <p class="gymshow gymedit">✎</p>
 </div>
