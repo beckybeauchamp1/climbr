@@ -1,14 +1,19 @@
-<h2><%= @gym.name %></h2>
-<h3><%= @gym.location %></h3>
+<div class="gymshowheader">
 
-<%= link_to "EDIT GYM", edit_gym_path %>
+  <h3 class="gymshow name"><%= @gym.name %> |</h3>
+  <p class="gymshow city"><%= @gym.location %></p>
+  <p class="gymshow gymedit"><%= link_to "✎", edit_gym_path %></p>
 
-<h3>Completed Routes</h3>
+</div>
 
-<% @gym.courses.each do |course| %>
-  <li>
-    <%= link_to course.title, gym_course_path(@gym, course) %>
-  </li>
-<% end %>
+<div class="gymshowbody">
 
-<h3><%= link_to "Add a New Route", new_gym_course_path(@gym) %></h3>
+  <% @gym.courses.each do |course| %>
+    <p class="arimo">
+      <%= link_to course.title, gym_course_path(@gym, course), class:"arimolink" %>
+    </p>
+  <% end %>
+
+  <h3 class="arimo"><%= link_to "Add New Route", new_gym_course_path(@gym), class: "arimolink add" %></h3>
+
+</div>

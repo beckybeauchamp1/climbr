@@ -1,5 +1,6 @@
-<h2>Add a New Climbing Center</h2>
+<h2>Add New Climbing Center</h2>
 
+<div class="form">
 <%= form_for @gym do |f| %>
 
   <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
@@ -15,7 +16,9 @@
   </p>
 
   <p>
-    <%= f.submit "ADD" %>
+    <%= f.submit "ADD GYM" %>
   </p>
 
 <% end %>
+
+</div>

@@ -2,14 +2,20 @@
 <html>
 <head>
   <title>Climbr</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto|Arimo' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Buda:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-  <h1><%= link_to "CLIMBR", gyms_path %></h1>
-  <h2>Your personal climbing tracker.</h2>
+  <header>
+    <h1><%= link_to "CLIMBR", gyms_path, class: "header" %></h1>
+    <h4 class = "description">your personal climbing tracker</h4>
+  </header>
 
 <%= yield %>
 

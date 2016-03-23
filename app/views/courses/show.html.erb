@@ -1,7 +1,14 @@
-<h3><%= @course.title %></h3>
+<div class="gymshowheader">
+  <h3 class="gymshow name"><%= @gym.name %> |</h3>
+  <p class="gymshow city"><%= @gym.location %></p>
+  <p class="gymshow gymedit">✎</p>
+</div>
 
-<%= @course.difficulty %><br>
-<%= @course.setter %><br>
-<%= @course.set_date %><br>
+<div class="courseshow">
+  <h3 class="courseheader title"><%= @course.title %></h3>
+  <p class="courseheader courseedit"><%= link_to "✎", edit_gym_course_path %></p><br>
 
-<%= link_to "EDIT ROUTE", edit_gym_course_path %>
+  <p class="coursetag"><%= @course.setter %> |</p>
+  <p class="coursetag"><%= @course.set_date %></p>
+  <p class="difficulty"><%= @course.difficulty %></p><br>
+</div>

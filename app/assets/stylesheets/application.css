@@ -1,0 +1,116 @@
+header {
+  background-image: url("http://static.simpledesktops.com/uploads/desktops/2014/04/23/Black_Diamonds.png");
+  padding: 10px;
+}
+
+h1 {
+  font-family: Roboto;
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: Arimo;
+  font-variant: small-caps;
+  font-size: 40px;
+  text-align: center;
+}
+
+a.header {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.description {
+  text-align: center;
+  font-style: italic;
+  color: #ffffff;
+}
+
+body {
+  background-color: #c1cfd7;
+}
+
+.arimo {
+  font-family: Arimo;
+  font-variant: small-caps;
+  font-size: 30px;
+  text-align: center;
+}
+
+a.arimolink {
+  text-decoration: none;
+  color: #282828;
+}
+
+.gymshow {
+  display: inline-block;
+}
+
+.name {
+  font-family: Arimo;
+  font-variant: small-caps;
+  font-size: 40px;
+  margin: 20px 5px 1px 20px;
+}
+
+.city {
+  font-family: Buda;
+  font-style: oblique;
+  font-size: 20px;
+}
+
+.gymedit {
+  font-size: 20px;
+}
+
+.gymshowheader {
+  text-align: center;
+}
+
+.gymshowbody {
+  text-align: center;
+}
+
+.courseshow {
+  text-align: center;
+}
+
+.courseheader {
+  display: inline-block;
+}
+
+.coursetag {
+  display: inline-block;
+}
+
+.title {
+  font-family: Roboto;
+}
+
+.courseedit {
+  font-size: 20px;
+}
+
+.coursetag {
+  display: inline-block;
+  font-family: Roboto;
+  text-align: center;
+}
+
+.difficulty {
+  font-family: Roboto;
+  font-size: 100px;
+  font-weight: bold;
+}
+
+a.add {
+  font-size: 20px;
+  color: #901c0c
+}
+
+.form {
+  width: 150px;
+  margin: 0 auto;
+}
