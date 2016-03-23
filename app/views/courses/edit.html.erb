@@ -1,3 +1,15 @@
+<div class="gymshowheader">
+  <h3 class="gymshow name arimo"><%= link_to @gym.name, gym_path(@gym), class: "arimolink" %> |</h3>
+  <p class="gymshow city"><%= @gym.location %></p>
+  <p class="gymshow gymedit">✎</p>
+</div>
+
+<div class="gymshowheader courseshow">
+  <h3 class="courseheader title"><%= @course.title %></h3>
+  <p class="courseheader courseedit"><%= link_to "✎", edit_gym_course_path %></p><br>
+</div>
+
+
 <h2>Edit Route</h2>
 
 <div class="form">
