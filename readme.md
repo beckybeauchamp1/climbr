@@ -4,12 +4,12 @@ This web app will allow climbers to keep track of routes they have completed at 
 
 **************************************************
 
-Technologies used:
+Technologies used: HTML, CSS, Ruby, Rails
 
-Approach taken:
+Approach taken: Used CRUD functionality for a one-to-many relationship implementing nested routes.
 
-Installation instructions:
+Installation instructions: Go to: https://climbr-beta.herokuapp.com
 
-Unsolved problems:
+Unsolved problems: Implementing users functionality so that the app is personalized for each climber.
 
 Notes:
