@@ -10,7 +10,7 @@
 
 <div class="form">
   <%= form_for [@gym, @course] do |f| %>
-
+  <!-- Again, don't need the following authenticity token in a form for helper -->
     <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
 
     <p>

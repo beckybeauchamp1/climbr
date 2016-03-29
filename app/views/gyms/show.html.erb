@@ -9,10 +9,11 @@
 <div class="gymshowbody">
 
   <% @gym.courses.each do |course| %>
-    <p class="title">
-      <%= link_to course.title, gym_course_path(@gym, course), class:"arimolink" %>
-    </p>
-  <% end %>
+  <p class="title">
+    <%= link_to course.title, gym_course_path(@gym, course), class:"arimolink" %>
+  </p>
+  <%end%>
+
 
   <h3 class="arimo"><%= link_to "Add New Route", new_gym_course_path(@gym), class: "arimolink add" %></h3>
 

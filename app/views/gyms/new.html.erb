@@ -4,6 +4,7 @@
 
 <div class="form">
 <%= form_for @gym do |f| %>
+<!--Using a helper allows you to exclude the authenticity token!  -->
 
   <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
 

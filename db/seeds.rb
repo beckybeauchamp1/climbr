@@ -1,3 +1,4 @@
+# Nice job here! 
 Course.destroy_all
 Gym.destroy_all
 

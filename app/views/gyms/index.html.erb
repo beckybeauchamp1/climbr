@@ -1,4 +1,6 @@
 <% @gyms.each do |gym| %>
+<!--Sorry if this is an ignornant question, but what semantically does armio stand for? I would change the name to something more semantic-->
+<!--Nice job using helpers here!  -->
   <h3 class="arimo"><%= link_to gym.name, gym, class: "arimolink" %><h3>
 <% end %>
-<h3 class="arimo"><%= link_to "Add New Gym", new_gym_path, class: "arimolink add" %></h3>
+  <h3 class="arimo"><%= link_to "Add New Gym", new_gym_path, class: "arimolink add" %></h3>

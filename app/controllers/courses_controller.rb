@@ -1,6 +1,7 @@
 class CoursesController < ApplicationController
 
   def index
+    # NICE!
     @gym = Gym.find(params[:gym_id])
     @courses = @gym.courses
   end
@@ -12,6 +13,7 @@ class CoursesController < ApplicationController
 
   def create
     @gym = Gym.find(params[:gym_id])
+    # I would add @gym.courses.create! to make sure it will raise errors
     @course = @gym.courses.create(course_params)
     redirect_to gym_path(@gym)
   end
